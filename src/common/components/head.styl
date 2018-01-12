@@ -1,0 +1,40 @@
+@import '../func.styl'
+.head
+    padding:16px 50px
+    width:torem(1200)
+    margin:0 auto
+    nowrap()
+    &:after
+        content:""
+        display:block
+        clear:both
+.logoCon
+    float:left
+    width:44px
+    height:44px
+    background:url('./logo.png') no-repeat center center
+    background-size:70% 70%
+.head_ul
+    float:right
+    nowrap()
+    &:after
+        content:""
+        display:block
+        clear:both
+    li
+        float:left
+        height:42px
+        line-height:42px
+        text-align:center
+        margin-right:torem(60)
+        font-size:16px
+        list-style:none
+    li.headList
+        color:#333
+        &:hover
+            color:#ff9800
+    li.signIn
+        background-color:#ff9800
+        border-radius:10px
+        width:100px
+        color:#fff
