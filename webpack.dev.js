@@ -9,8 +9,8 @@ var glob = require('glob');
 var path = require('path');
 var hostName = "127.0.0.1";
 var devPort = "3000";
-// var page = "index1.html";
-var page = "solider.html";
+var page = "index1.html";
+// var page = "solider.html";
 
 
 
