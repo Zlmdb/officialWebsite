@@ -1,0 +1,73 @@
+@import '../../../../common/func.styl'
+//八大核心功能的下划线
+.spanStyle
+    display:block
+    width: 50px
+    border-bottom: 1px solid #333
+    margin:0 auto
+.spanStylef
+    display:block
+    width: 50px
+    border-bottom: 1px solid #fff
+    margin:0 auto
+.treatmentCon
+    margin:0 auto
+    //margin-top:torem(70)
+    width:torem(1200)
+    display:flex
+    border-bottom:1px solid #dbdbdb
+    //border-right:1px solid #dbdbdb
+    .treatmentitem
+        flex:1
+        position:relative
+        text-align:center
+        background:#fff
+        overflow:hidden
+        .treattag
+            width:100%
+            height:torem(400)
+            img
+                max-width:torem(90)
+            .title
+                font-size:torem(20)
+                color:#000
+        .mask
+            position:absolute
+            top:0
+            left:0
+            right:0
+            //bottom:0
+            height:torem(800)
+            padding-top:torem(400)
+            background-color:#ff9800
+            opacity:0
+            filter:Alpha(opacity=0)
+            transition: all 600ms ease-in-out;
+            //transition: 1s all linear
+            &:hover
+                opacity: 1
+                top:-100%
+                //filter:Alpha(opacity=100)
+            .con
+                //margin:0 auto
+                //height:auto
+                //margin-top:50%
+                //transform:translateY(-65%)
+                padding:torem(46) torem(20) 0 torem(30)
+                color:#fff
+                .cona
+                    display:block
+                    //width:60px
+                    //height:60px
+                    font-size:torem(20)
+                    //margin:0 auto
+                    margin-bottom:torem(40)
+                .masktitle
+                    margin-top:18px
+                    font-size:torem(14)
+                    color:#fff
+.am-icon-check
+    border-right:1px solid #dbdbdb
+                
+
+

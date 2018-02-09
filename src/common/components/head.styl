@@ -1,37 +1,35 @@
 @import '../func.styl'
 .head
-    padding:16px 50px
+    padding:16px 0
     width:torem(1200)
     margin:0 auto
-    nowrap()
-    &:after
-        content:""
-        display:block
-        clear:both
+    //nowrap()
+    display:flex
+    justify-content:space-between
 .logoCon
-    float:left
+    //float:left
+    //flex:1
     width:44px
     height:44px
     background:url('./logo.png') no-repeat center center
     background-size:70% 70%
 .head_ul
-    float:right
-    nowrap()
-    &:after
-        content:""
-        display:block
-        clear:both
+    //flex:3
+    display:flex
+    justify-content:space-between
     li
-        float:left
+        //float:left
+        
         height:42px
         line-height:42px
         text-align:center
-        margin-right:torem(60)
+        //margin-right:torem(60)
+        padding:0 torem(25)
         font-size:16px
         list-style:none
     li.headList
         color:#333
-        &:hover
+        & a:hover
             color:#ff9800
     li.signIn
         background-color:#ff9800

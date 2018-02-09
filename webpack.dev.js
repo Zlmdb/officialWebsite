@@ -9,7 +9,7 @@ var glob = require('glob');
 var path = require('path');
 var hostName = "127.0.0.1";
 var devPort = "3000";
-var page = "index1.html";
+var page = "things.html";
 // var page = "solider.html";
 
 
@@ -58,7 +58,7 @@ module.exports = { //注意这里是exports不是export
     entry: entries(), //唯一入口文件，就像Java中的main方法
     output: { //输出目录
         path: __dirname + "/build", //打包后的js文件存放的地方
-        // publicPath: '/',
+        publicPath: '/',//js,css,img等资源对应的server目录
         filename: "[name].js" //打包后的js文件名
     },
     resolve: {  
@@ -151,15 +151,15 @@ module.exports = { //注意这里是exports不是export
         ]
     },
     plugins: [
-        new webpack.DefinePlugin({
-            'process.env': {
-                NODE_ENV: '"development"'
-            }
-        }),
+        // new webpack.DefinePlugin({
+        //     'process.env': {
+        //         NODE_ENV: '"development"'
+        //     }
+        // }),
         new FriendlyErrorsPlugin(),
         new ExtractTextPlugin({
             filename: 'css/[name].css',
-            allChunks: false
+            allChunks: true
         }),
         //热替换,react-hot-loader要依赖这个插件
         new webpack.HotModuleReplacementPlugin(),

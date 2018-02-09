@@ -1,9 +1,29 @@
 var React = require('react');
 var ReactDom = require('react-dom');
 // var QuestionApp = require('./components/QuestionApp.js');
-import Common from './components/common.js'
+import Centercon from './components/centerCon.js'
+import Header from 'common/components/head.js'
+import Footer from 'common/components/Footer.js'
 import 'common/reset.css'
-import './index.styl'
+import './worktogather.styl'
+
+class Common extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state={
+            string:''
+        }
+    }
+    render() {
+        return (
+            <div>
+                <Header/>
+                <Centercon/>
+                <Footer/>
+            </div>
+        )
+    }
+}
 
 var deviceWidth = document.documentElement.clientWidth;
 // if (deviceWidth > 640) deviceWidth = 640;
